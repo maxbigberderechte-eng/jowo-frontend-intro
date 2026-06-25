@@ -1,0 +1,64 @@
+/*div{*/
+/*    background-color: red;*/
+/*}*/
+/*.keine-ahnung{*/
+/*    background-color: blue;*/
+/*}*/
+/*#email-field{*/
+/*    background-color: yellow;*/
+/*}*/
+/*.block{*/
+/*    background-color: aqua;*/
+/*    height: 50px;*/
+/*    !*width: 50px;*!*/
+/*    margin: 50px;*/
+/*    !*padding-top: 50px;*!*/
+/*    !*padding-bottom: 50px;*!*/
+/*    padding: 50px 0;*/
+/*    max-width: 500px;*/
+/*    min-width: 500px;*/
+/*    !*font-family: Noto Sans Yi;*!*/
+/*    font-size: 50px;*/
+/*    font-weight: 200;*/
+/*    text-align: start;*/
+/*    color: red;*/
+/*    border: 10px dashed #1EB03B;*/
+/*    border-radius: 50%;*/
+/*    box-shadow: 50px 55px 500px red;*/
+/*}*/
+/*span{*/
+/*    display: inline-block;*/
+/*    background-color: black;*/
+/*    !*min-width: 500px;*!*/
+/*}*/
+
+.container-item {
+    background-color: white;
+    margin: 5px;
+    width: 200px;
+    height: 50px;
+
+}
+
+.container{
+    padding: 5px;
+    background-color: black;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.clic{
+    background-color: antiquewhite;
+
+}
+
+.clic:hover{
+    background-color: red;
+}
+
+.clic:active{
+    background-color: blue;
+}

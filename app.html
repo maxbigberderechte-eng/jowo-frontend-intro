@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="app.css" />
     <meta charset="UTF-8">
     <title>User profile</title>
 </head>
 <body>
     <header> User profile </header>
     <main>
-        Hello world
         <form >
-            <h2> Create profile </h2>
-            <div>
-                <label for="name"> name: </label>
-                <input type="text" placeholder="name" id="name" name="name" required>
+            <div class="card">
+                <h2> Create profile </h2>
+                <div class="card-item">
+                    <label for="name"> name: </label>
+                    <input type="text" placeholder="name" id="name" name="name" required class="card-item-input">
+                </div>
+                <div class="card-item">
+                    <label for="email"> email: </label>
+                    <input type="email" placeholder="email" id="email" name="email" required class="card-item-input">
+                </div>
+                <div class="card-item">
+                    <label for="skill"> skill: </label>
+                    <input type="text" placeholder="skill" id="skill" name="skill" required class="card-item-input">
+                </div>
+                <div class="card-item">
+                    <label for="about"> about: </label>
+                    <input type="text" placeholder="about" id="about" name="about" required class="card-item-input">
+                </div>
+                <div class="card-item">
+                    <button type="submit" class="card-item-button card-item-button-send"> send </button>
+                    <button type="reset" class="card-item-button card-item-button-reset"> reset </button>
+                </div>
             </div>
-            <div>
-                <label for="email"> email: </label>
-                <input type="email" placeholder="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="skill"> skill: </label>
-                <input type="text" placeholder="skill" id="skill" name="skill" required>
-            </div>
-            <div>
-                <label for="about"> about: </label>
-                <input type="text" placeholder="about" id="about" name="about" required>
-            </div>
-            <div>
-                <button type="submit"> send </button>
-                <button type="reset"> reset </button>
-            </div>
-            <section>
+        </form>
+        <section class="profile">
                 <img src="./assets/images/user-profile-image.png" alt="user-profile-image" width="80" height="80">
                 <h2>Name: Alex Johnson </h2>
                 <p>
@@ -47,8 +50,8 @@
                 </p>
                 <a href="mailto:a.johnsonn@gmail.com">Message link: mailto:a.johnsonn@gmail.com </a>
             </section>
-        </form>
     </main>
     <footer> ©2026 </footer>
+<script src="app.js"></script>
 </body>
 </html>
