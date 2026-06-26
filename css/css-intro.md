@@ -55,11 +55,12 @@ You can style elements using a class.
 You need to assign the class name to the <tag> using the `class` attribute and style it in the CSS file.
 
 ```html
-<div class="card"></div>
+
+<div class="card-Create-profile"></div>
 ```
 
 ```css
-.card {
+.card-Create-profile {
   background-color: #fff;
 }
 ```

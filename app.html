@@ -9,47 +9,49 @@
     <header> User profile </header>
     <main>
         <form >
-            <div class="card">
+            <div class="card-Create-profile">
                 <h2> Create profile </h2>
-                <div class="card-item">
+                <div class="card-Create-profile-item">
                     <label for="name"> name: </label>
-                    <input type="text" placeholder="name" id="name" name="name" required class="card-item-input">
+                    <input type="text" placeholder="name" id="name" name="name" required class="card-Create-profile-item-input">
                 </div>
-                <div class="card-item">
+                <div class="card-Create-profile-item">
                     <label for="email"> email: </label>
-                    <input type="email" placeholder="email" id="email" name="email" required class="card-item-input">
+                    <input type="email" placeholder="email" id="email" name="email" required class="card-Create-profile-item-input">
                 </div>
-                <div class="card-item">
+                <div class="card-Create-profile-item">
                     <label for="skill"> skill: </label>
-                    <input type="text" placeholder="skill" id="skill" name="skill" required class="card-item-input">
+                    <input type="text" placeholder="skill" id="skill" name="skill" required class="card-Create-profile-item-input">
                 </div>
-                <div class="card-item">
+                <div class="card-Create-profile-item">
                     <label for="about"> about: </label>
-                    <input type="text" placeholder="about" id="about" name="about" required class="card-item-input">
+                    <input type="text" placeholder="about" id="about" name="about" required class="card-Create-profile-item-input">
                 </div>
-                <div class="card-item">
+                <div class="card-Create-profile-item">
                     <button type="submit" class="card-item-button card-item-button-send"> send </button>
                     <button type="reset" class="card-item-button card-item-button-reset"> reset </button>
                 </div>
             </div>
         </form>
-        <section class="profile">
-                <img src="./assets/images/user-profile-image.png" alt="user-profile-image" width="80" height="80">
-                <h2>Name: Alex Johnson </h2>
-                <p>
+        <div class="card-profile">
+            <section class="profile">
+                <img src="./assets/images/user-profile-image.png" alt="user-profile-image" width="70" height="70" class="card-profile-item card-profile-item-img">
+                <h2 class="card-profile-item-name card-profile-item"> Alex Johnson </h2>
+                <p class="card-profile-item card-profile-item-email">
                     <strong> E-Mail: </strong>
                      a.johnsonn@gmail.com
                 </p>
-                <p>
+                <p class="card-profile-item card-profile-item-skills">
                     <strong> Skills: </strong>
                      HTML, CSS, JavaScript
                 </p>
-                <p>
+                <p class="card-profile-item card-profile-item-description">
                     <strong> Description: </strong>
                      Frontend developer in training. Learning how to build modern web interfaces.
                 </p>
-                <a href="mailto:a.johnsonn@gmail.com">Message link: mailto:a.johnsonn@gmail.com </a>
+                <a href="mailto:a.johnsonn@gmail.com" class="card-profile-item card-profile-item-Massage">Message </a>
             </section>
+        </div>
     </main>
     <footer> ©2026 </footer>
 <script src="app.js"></script>

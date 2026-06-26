@@ -41,9 +41,9 @@
 }
 
 .container{
-    padding: 5px;
+    padding: 10px;
     background-color: black;
-    height: 600px;
+    height: 60px;
     display: flex;
     align-items: center;
     width: 100%;

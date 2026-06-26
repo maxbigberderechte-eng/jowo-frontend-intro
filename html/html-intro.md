@@ -165,8 +165,9 @@ These attributes can be used on almost any HTML element.
 - `title` → tooltip text on hover
 
 ```html
-<div class="card" id="main-card" title="Hello">
-  Content
+
+<div class="card-Create-profile" id="main-card" title="Hello">
+    Content
 </div>
 ```
 

@@ -9,7 +9,7 @@ body {
     display: flex;
 }
 
-main{
+main {
     height: 100%;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@ main{
     gap: 100px;
 }
 
-header, footer{
+header, footer {
     height: 40px;
     background-color: #fff;
     align-items: center;
@@ -27,7 +27,7 @@ header, footer{
     width: 100%;
 }
 
-.card{
+.card-Create-profile {
     background-color: #fff;
     padding: 16px;
     width: 250px;
@@ -36,42 +36,92 @@ header, footer{
 
 }
 
-.card-item{
+.card-Create-profile-item {
     margin-top: 16px;
 }
 
-.card-item-input{
+.card-Create-profile-item-input {
     border: 1px solid #ccc;
 }
 
-.card-item-button{
+.card-item-button {
     border: 3px;
 }
 
-.card-item-button-send{
+.card-item-button-send {
     background-color: #C4D9FF;
 }
 
-.card-item-button-send:hover{
+.card-item-button-send:hover {
     background-color: #AECBFC;
 }
 
-.card-item-button-send:active{
+.card-item-button-send:active {
     background-color: #95BDFC;
 }
 
-.card-item-button-reset{
-    background-color:  #FFC4C4;
+.card-item-button-reset {
+    background-color: #FFC4C4;
 }
 
-.card-item-button-reset:hover{
+.card-item-button-reset:hover {
     background-color: #FCB6B6;
 }
 
-.card-item-button-reset:active{
-    background-color:  #FFA6A6;
+.card-item-button-reset:active {
+    background-color: #FFA6A6;
 }
 
-.hidden{
+.card-profile {
+    background-color: #fff;
+    padding: 16px;
+    width: 250px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.profile{
+    
+}
+
+.card-profile-item {
+    justify-content: center;
+    display: flex;
+    color: #612978;
+}
+
+.card-profile-item-img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-profile-item-name {
+    color: #411B4F;
+    margin-bottom: 0px;
+}
+
+.card-profile-item-email {
+    font-size: 10px;
+    margin-top: 0px;
+}
+
+.card-profile-item-description {
+    font-size: 12px;
+}
+
+.card-profile-item-Massage {
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #612978;
+    margin-top: auto;
+    text-decoration: none;
+}
+
+.card-profile-item-Massage:hover {
+    background-color: #612978;
+    color: #fff;
+}
+
+.hidden {
     display: none;
 }
