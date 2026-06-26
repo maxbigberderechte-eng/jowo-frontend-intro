@@ -1,47 +1,39 @@
 
-// 1. Elemente auswählen
-// Formular über das Tag auswählen (da keine Klasse vorhanden ist)
-const profileForm = document.querySelector('form');
+const card = document.querySelector('.profile-card')
+card.classList.add('hidden')
 
-// Inputs über ihre IDs auswählen
+const form = document.querySelector('.profile-form');
+
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
-const skillInput = document.querySelector('#skill'); // ID im HTML ist 'skill' (Singular)
+const skillsInput = document.querySelector('#skills');
 const aboutInput = document.querySelector('#about');
 
-// Card-Container und Text-Felder über ihre Klassen auswählen
-const profileCard = document.querySelector('.card-profile');
-const cardName = document.querySelector('.card-profile-item-name');
-const cardEmail = document.querySelector('.card-profile-item-email');
-const cardSkills = document.querySelector('.card-profile-item-skills');
-const cardAbout = document.querySelector('.card-profile-item-description');
-const cardMessageButton = document.querySelector('.card-profile-item-Massage');
+const cardName = document.querySelector('.profile-card-heading');
+const cardEmail = document.querySelector('.profile-card-email');
+const cardSkills = document.querySelector('.profile-card-skills');
+const cardAbout = document.querySelector('.profile-card-about');
 
-// Standardmäßig die Profilkarte beim ersten Laden verstecken
-profileCard.classList.add('hidden');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
 
-// 2. Event-Listener für das Absenden (Submit)
-profileForm.addEventListener('submit', function(event) {
-    // Verhindert das Neuladen der Seite
-    event.preventDefault();
+  console.log(nameInput.value);
 
-    // Werte aus den Inputs auslesen und in die Karte schreiben
-    // Da E-Mail, Skills und Description ein <strong>-Tag enthalten, nutzen wir innerHTML
-    cardName.textContent = nameInput.value;
-    cardEmail.innerHTML = `<strong> E-Mail: </strong> ${emailInput.value}`;
-    cardSkills.innerHTML = `<strong> Skills: </strong> ${skillInput.value}`;
-    cardAbout.innerHTML = `<strong> Description: </strong> ${aboutInput.value}`;
+  cardName.textContent = nameInput.value
+  cardEmail.textContent = emailInput.value
 
-    // Optional: Auch den "Message"-Link dynamisch mit der neuen E-Mail updaten
-    cardMessageButton.href = `mailto:${emailInput.value}`;
+  cardSkills.innerHTML = `<strong>Skills:</strong> ${
+    skillsInput.value
+  }`;
 
-    // Profilkarte sichtbar machen
-    profileCard.classList.remove('hidden');
+  cardAbout.textContent =
+    aboutInput.value
+
+  card.classList.remove('hidden')
 });
 
-// 3. Event-Listener für das Zurücksetzen (Reset)
-profileForm.addEventListener('reset', function() {
-    // Profilkarte wieder verstecken
-    profileCard.classList.add('hidden');
+form.addEventListener('reset', (e) => {  
+  card.classList.add('hidden')
 });
 
+#todo: abändern auf meins
